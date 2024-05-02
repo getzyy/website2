@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.pdf {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+    }
+    .pdf,
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+   h1, h2, h3 {
+        text-align: center;
+    }
+
+    h1 {
+        color: green;
+    }
+
+.collapsible {
+  background-color: #7cbaf0;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #2d64dc;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Implementacion y evaluacion de un sistema experto para la gestion de solicitudes medicas</h2>
+<br>
+<p>Getzemani Kinari Ríos Tavares | A00573866</p>
+<p>Cristobal Medina Meza | A01643121 </p>
+<p>Sara Rivera Méndez | A01068365 </p>
+<br>
+<p>Peticiones de recomendaciones:</p>
+
+<button class="collapsible">Prueba 1</button>
+<div class="content">
+<img src="trash8_1.jpg" alt="image1" width="800" height="1100">
+<img src="trash8_2.jpg" alt="image2" width="800" height="1100">
+</div>
+<button class="collapsible">Prueba 2</button>
+<div class="content">
+<img src="trash1_1.jpg" alt="image1" width="800" height="1100">
+<img src="trash1_2.jpg" alt="image2" width="800" height="1100">>
+</div>
+<button class="collapsible">Prueba 3</button>
+<div class="content">
+<img src="trash2_1.jpg" alt="image1" width="800" height="1100">
+<img src="trash2_2.jpg" alt="image2" width="800" height="1100">>
+</div>
+<button class="collapsible">Prueba 4</button>
+<div class="content">
+<img src="trash3_1.jpg" alt="image1" width="800" height="1100">
+<img src="trash3_2.jpg" alt="image2" width="800" height="1100">>
+</div>
+<button class="collapsible">Prueba 5</button>
+<div class="content">
+<img src="trash4_1.jpg" alt="image1" width="800" height="1100">
+<img src="trash4_2.jpg" alt="image2" width="800" height="1100">>
+</div>
+<button class="collapsible">Prueba 6</button>
+<div class="content">
+<img src="trash5_1.jpg" alt="image1" width="800" height="1100">
+<img src="trash5_2.jpg" alt="image2" width="800" height="1100">>
+</div>
+<button class="collapsible">Prueba 7</button>
+<div class="content">
+<img src="trash6_1.jpg" alt="image1" width="800" height="1100">
+<img src="trash6_2.jpg" alt="image2" width="800" height="1100">>
+</div>
+<button class="collapsible">Prueba 8</button>
+<div class="content">
+<img src="trash7_1.jpg" alt="image1" width="800" height="1100">
+<img src="trash7_2.jpg" alt="image2" width="800" height="1100">>
+</div>
+<button class="collapsible">Prueba 9</button>
+<div class="content">
+<img src="trash9_1.jpg" alt="image1" width="800" height="1100">
+<img src="trash9_2.jpg" alt="image2" width="800" height="1100">>
+</div>
+<button class="collapsible">Prueba 10</button>
+<div class="content">
+<img src="trash10_1.jpg" alt="image1" width="800" height="1100">
+<img src="trash10_2.jpg" alt="image2" width="800" height="1100">>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
